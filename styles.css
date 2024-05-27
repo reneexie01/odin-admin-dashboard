@@ -122,7 +122,7 @@ h2 {
     background-color: yellow;
 }
 
-.user-name {
+.header .user-name {
     font-family: roboto-bold;
 }
 
@@ -176,18 +176,15 @@ h2 {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 15px;
-}
-
-.projects {
-    padding: 3%;
+    gap: 20px;
+    padding: 2%;
 }
 
 .projects .items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-    padding-top: 1%;
+    margin-top: 10px;
 }
 
 .projects .card {
@@ -215,7 +212,7 @@ h2 {
     padding: 2% 10%;
 }
 
-.projects .body {
+.projects .body, .announcements .body, .trending .user-name {
     font-size: 14px;
     color: #636363;
 }
@@ -236,11 +233,29 @@ h2 {
 .announcements .items {
     border: 1px solid black;
     border-radius: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+    padding: 5%;
 }
 
-.trending {
-    border: 1px solid black;
+.announcements .card {
+    padding: 10px;
+}
+
+.announcements .title, .user-handle {
+    font-size: 14px;
+}
+
+.trending .heading {
+    margin-top: 30px;
+}
+
+.trending .items {
+    background: white;
     border-radius: 10px;
+    margin-top: 10px;
+    padding: 5%;
 }
 
 .trending .users {
